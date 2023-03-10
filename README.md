@@ -60,23 +60,25 @@ W tmuxie istnieje możliwość zmiany kolejności okien, czyli przemieszczania i
 
 Aby to zrobić, należy użyć jednego z dwóch poleceń:
 
-bash```swap-window -s nr_okna -t nr_okna
+```bash
+swap-window -s nr_okna -t nr_okna
 ```
 Przenosi okno o numerze nr_okna na pozycję okna o numerze nr_okna.
 
-bash```move-window -s nr_okna -t nr_okna
+```bash
+move-window -s nr_okna -t nr_okna
 ``` 
 Przenosi okno o numerze nr_okna na pozycję okna o numerze nr_okna i dostosowuje numery innych okien w odpowiedni sposób.
 
 Oto przykładowe użycie poleceń, aby zmienić kolejność okien:
 
 Aby przenieść okno o numerze 2 na pozycję pierwszą, wykonaj polecenie: 
-bash```
+```bash
 tmux swap-window -s 2 -t 1
 ```
 
 Aby przenieść okno o numerze 3 na pozycję drugą i dostosować numery innych okien, wykonaj polecenie:
-bash```
+```bash
 tmux move-window -s 3 -t 2
 ```
 
@@ -93,7 +95,7 @@ Aby usunąć okno w tmuxie, należy użyć polecenia tmux kill-window. Aby to zr
 
 3. Wykonaj polecenie 
 
-bash```
+```bash
 tmux kill-window
 ```
  lub skrót klawiszowy Ctrl-b &.
