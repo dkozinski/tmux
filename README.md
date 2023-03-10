@@ -48,22 +48,38 @@ lub
 tmux attach-session -t numer_sesji
 ```
 
-, aby dołączyć do wybranej sesji. Można również użyć skrótu klawiszowego tmux a jako alternatywy dla tmux attach-session.
+aby dołączyć do wybranej sesji.
+
+Można również użyć skrótu klawiszowego tmuxa jako alternatywy dla tmux attach-session.
 
 Po wykonaniu tych kroków powinieneś być w stanie dołączyć do istniejącej sesji tmux i kontynuować pracę tam, gdzie ją przerwałeś.
 
-### Zmiana kolejności okien
+### Zarządzanie oknami
 
-W tmuxie istnieje możliwość zmiany kolejności okien, czyli przemieszczania ich w lewo lub prawo. Aby to zrobić, należy użyć jednego z dwóch poleceń:
+W tmuxie istnieje możliwość zmiany kolejności okien, czyli przemieszczania ich w lewo lub prawo.
 
-swap-window -s nr_okna -t nr_okna: Przenosi okno o numerze nr_okna na pozycję okna o numerze nr_okna.
+Aby to zrobić, należy użyć jednego z dwóch poleceń:
 
-move-window -s nr_okna -t nr_okna: Przenosi okno o numerze nr_okna na pozycję okna o numerze nr_okna i dostosowuje numery innych okien w odpowiedni sposób.
+bash```swap-window -s nr_okna -t nr_okna
+```
+Przenosi okno o numerze nr_okna na pozycję okna o numerze nr_okna.
+
+bash```move-window -s nr_okna -t nr_okna
+``` 
+Przenosi okno o numerze nr_okna na pozycję okna o numerze nr_okna i dostosowuje numery innych okien w odpowiedni sposób.
 
 Oto przykładowe użycie poleceń, aby zmienić kolejność okien:
 
-Aby przenieść okno o numerze 2 na pozycję pierwszą, wykonaj polecenie: tmux swap-window -s 2 -t 1
-Aby przenieść okno o numerze 3 na pozycję drugą i dostosować numery innych okien, wykonaj polecenie: tmux move-window -s 3 -t 2
+Aby przenieść okno o numerze 2 na pozycję pierwszą, wykonaj polecenie: 
+bash```
+tmux swap-window -s 2 -t 1
+```
+
+Aby przenieść okno o numerze 3 na pozycję drugą i dostosować numery innych okien, wykonaj polecenie:
+bash```
+tmux move-window -s 3 -t 2
+```
+
 Pamiętaj, że numery okien zaczynają się od 0, więc pierwsze okno ma numer 0, drugie okno ma numer 1, itd.
 
 
@@ -76,6 +92,7 @@ Aby usunąć okno w tmuxie, należy użyć polecenia tmux kill-window. Aby to zr
 2. Przejdź do okna, które chcesz usunąć.
 
 3. Wykonaj polecenie 
+
 bash```
 tmux kill-window
 ```
