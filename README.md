@@ -17,8 +17,12 @@ Przykładowo, można ustawić klawisz Ctrl+A jako klawisz startowy (zamiast domy
 
 Warto pamiętać, że zmiany wprowadzone w pliku konfiguracyjnym nie będą miały natychmiastowego efektu.
 
-Aby zobaczyć zmiany, należy uruchomić tmuxa ponownie, używając polecenia "tmux source-file ~/.tmux.conf" lub po prostu zamknąć i otworzyć ponownie terminal.
+### 
+Aby zobaczyć zmiany, należy uruchomić tmuxa ponownie, używając polecenia 
 
-## Kopiowanie tekstu
+```bash
+tmux source-file ~/.tmux.conf
+```
 
+lub po prostu zamknąć i otworzyć ponownie terminal.
 
