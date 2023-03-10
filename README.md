@@ -33,7 +33,11 @@ Aby dołączyć do istniejącej sesji tmux, należy użyć polecenia tmux attach
 
 Otwórz terminal na swoim komputerze.
 
-Uruchom polecenie tmux ls, aby wyświetlić listę istniejących sesji tmux.
+Uruchom polecenie 
+```bash
+tmux ls
+````
+, aby wyświetlić listę istniejących sesji tmux.
 
 Znajdź nazwę lub numer sesji, do której chcesz się dołączyć.
 
