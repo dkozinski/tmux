@@ -108,4 +108,8 @@ tmux kill-window
 
 Po wykonaniu tych kroków okno zostanie usunięte z sesji tmux. Pamiętaj, że usuwanie okna jest trwałe, więc upewnij się, że nie chcesz już dłużej z niego korzystać przed wykonaniem tego polecenia.
 
+### Kopiowanie 
 
+Zancz tekst za pomocą myszy i wciśni 'y'.
+Aby wkleić tekst w tmuxie wcisnij 'p'.
+Aby wkleić tekst poza tmuxem wcisnij kombinacje klawiszy ctr+shift+v.
